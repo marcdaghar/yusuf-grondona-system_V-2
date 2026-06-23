@@ -1,0 +1,144 @@
+
+# requirements.txt
+requirements = """# Core scientific computing
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.11.0
+
+# Agent-Based Modeling
+mesa>=2.0.0
+
+# AI / Machine Learning
+scikit-learn>=1.2.0
+
+# Dashboard & Visualization
+streamlit>=1.25.0
+plotly>=5.14.0
+
+# Blockchain & Cryptography (optional)
+cryptography>=36.0.0
+pycryptodome>=3.14.0
+
+# Testing
+pytest>=7.4.0
+
+# Jupyter
+jupyterlab>=4.0.0
+notebook>=7.0.0
+
+# Utilities
+python-dateutil>=2.8.2
+pyyaml>=6.0
+
+# Documentation
+sphinx>=4.0.0
+"""
+
+with open("/mnt/agents/output/yusuf-grondona-system/requirements.txt", "w") as f:
+    f.write(requirements)
+
+# LICENSE (CC BY-SA 4.0)
+license_text = """Creative Commons Attribution-ShareAlike 4.0 International
+
+Copyright (c) 2026 Marc Daghar
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 
+International License. To view a copy of this license, visit:
+
+    https://creativecommons.org/licenses/by-sa/4.0/
+
+or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+ATTRIBUTION
+
+You must give appropriate credit to Marc Daghar, provide a link to the license,
+and indicate if changes were made. You may do so in any reasonable manner, but 
+not in any way that suggests the licensor endorses you or your use.
+
+SHAREALIKE
+
+If you remix, transform, or build upon the material, you must distribute your 
+contributions under the same license as the original.
+
+Mention: Free Dr Aafia Siddiqui !
+"""
+
+with open("/mnt/agents/output/yusuf-grondona-system/LICENSE", "w") as f:
+    f.write(license_text)
+
+# .gitignore
+gitignore = """# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints
+
+# Streamlit
+.streamlit/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive data
+*.env
+.env.local
+*.log
+*.db
+*.sqlite
+
+# Output
+output/
+results/
+*.csv
+*.json
+*.png
+*.pdf
+!docs/*.pdf
+
+# Solidity
+contracts/node_modules/
+contracts/artifacts/
+contracts/cache/
+
+# Docker
+*.dockerignore
+"""
+
+with open("/mnt/agents/output/yusuf-grondona-system/.gitignore", "w") as f:
+    f.write(gitignore)
+
+print("Fichiers de base créés")
